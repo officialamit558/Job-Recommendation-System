@@ -62,11 +62,17 @@ def get_recommendations(resume_text, top_n=5):
 
 def format_job_output(job):
     output = f"""
-    Company Name: {job['Company']}
-    Job Title: {job['Job Role']}
-    Job Description: {job['Job_Description']}
+    ### Company Name:
+    {job['Company']}
+    
+    **Job Title:**
+    {job['Job Role']}
+    
+    **Job Description:**
+    {job['Job_Description']}
     """
     return output
+
 
 # Streamlit app
 st.title("Job Recommendation System")
@@ -81,7 +87,7 @@ if input_type == "Text Input":
             recommended_jobs = get_recommendations(resume_text, top_n=5)
             st.write("## Recommended Jobs")
             for job in recommended_jobs:
-                st.markdown(format_job_output(job))
+                st.markdown(format_job_output(job) , unsafe_allow_html=True)
         else:
             st.warning("Please enter your job role, skills, and career goals")
 
@@ -93,7 +99,7 @@ elif input_type == "Upload PDF":
             recommended_jobs = get_recommendations(resume_text, top_n=5)
             st.write("## Recommended Jobs")
             for job in recommended_jobs:
-                st.markdown(format_job_output(job))
+                st.markdown(format_job_output(job) , unsafe_allow_html=True)
         else:
             st.warning("Please upload a PDF file")
 
