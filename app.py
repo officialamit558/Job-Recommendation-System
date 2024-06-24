@@ -65,10 +65,10 @@ def format_job_output(job):
     ### Company Name:
     {job['Company']}
     
-    **Job Title:**
+    Job Title:
     {job['Job Role']}
     
-    **Job Description:**
+    Job Description:
     {job['Job_Description']}
     """
     return output
