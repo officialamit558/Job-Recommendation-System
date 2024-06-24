@@ -66,14 +66,13 @@ streamlit run app.py
 
 - **`requirements.txt`**: A file listing all Python dependencies required to run the project, typically used with `pip install -r requirements.txt` to install dependencies.
 
-### Notes
+## Contributors
+- @officialamit558
 
-- Ensure file and directory names are accurate and reflect the actual structure of your project.
-  
-- Use comments (`#`) to provide brief descriptions or explanations next to each file or directory entry.
-  
-- Use Markdown formatting to maintain readability and clarity in your `README.md` file.
+## License
+- This project is licensed under the MIT License. See the LICENSE file for details.
+- 
+This `README.md` file now incorporates all the provided details about your job recommendation system project, including its features, requirements, usage instructions, how it works, folder structure, contributors section, and license information. Adjust the placeholders (`YourGitHubHandle`, `LICENSE`, etc.) with your actual GitHub handle and license details as applicable. This format ensures clarity and completeness for users and potential contributors visiting your GitHub repository.
 
-This structured approach helps users and contributors understand the organization of your project files quickly and locate specific components they may need to work with or understand further. Adjust the comments and descriptions as per your project's specific details and needs.
 
 
