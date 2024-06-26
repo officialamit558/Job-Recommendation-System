@@ -1,5 +1,5 @@
 # Job Recommendation System
-
+- Deployed Link https://job-recommendation-system420.streamlit.app/
 This project implements a Job Recommendation System using natural language processing techniques and deep learning models. It provides recommendations based on the similarity between a user-provided resume (either as text input or uploaded PDF) and a database of job listings.
 
 ## Features
